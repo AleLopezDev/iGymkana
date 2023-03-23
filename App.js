@@ -5,14 +5,12 @@ import { redirigir } from './funciones/rrss/redirigir';
 
 export default function App() {
   const handleButtonPress = (screen) => {
-    // Aquí puedes manejar la navegación a cada pantalla correspondiente
+   
     console.log(`Navegando a la pantalla: ${screen}`);
   };
 
   return (
     <View style={styles.container}>
-
-
       <StatusBar style="auto" />
       <Image source={require('./assets/logo.png')} style={styles.logo} />
       <View style={styles.row}>
@@ -39,7 +37,7 @@ export default function App() {
 
 
       <TouchableOpacity >
-        <Text style={{color: '#1E90FF', fontSize: 14, marginBottom: 20}}>¿Eres Monitor? Inicia Sesión</Text>
+        <Text style={{color: 'black', fontSize: 14, marginBottom: 20}}>¿Eres Monitor? Inicia Sesión</Text>
       </TouchableOpacity>
 
       <View style={styles.socialIconsContainer}>
@@ -55,10 +53,6 @@ export default function App() {
             <Image source={require('./assets/rrss/facebook.png')} style={styles.socialIcon} />
           </TouchableOpacity>
       </View>
-
-  
-
-
     </View>
   );
 }
